@@ -1,8 +1,11 @@
 Raspberry PI Zero to Airplay with HDMI Output
 
 sudo apt-get install autoconf libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev
+
 sudo apt-get install avahi-daemon libavahi-client-dev
+
 sudo apt-get install libssl-dev
+
 sudo apt-get install git
 
 
