@@ -10,13 +10,17 @@ sudo apt-get install git
 
 
 cd ~
+
 git clone https://github.com/mikebrady/shairport-sync.git
 
 cd shairport-sync
+
 autoreconf -i -f
+
 ./configure --with-alsa --with-avahi --with-ssl=openssl --with-systemd --with-metadata
 
 make
+
 sudo make install
 
 sudo systemctl enable shairport-sync
@@ -24,6 +28,7 @@ sudo systemctl enable shairport-sync
 sudo service shairport-sync start
 
 Adjust Audio
+
 sudo nano /usr/local/etc/shairport-sync.conf
 
 In the file find 
